@@ -85,7 +85,7 @@ client.on("message", async msg => {
 
 	let content = msg.content; // pings are not pinged in embeds
 
-	if(content.indexOf(">!") > -1 && content.indexOf("!<") > -1 && content.match(spoilerRegex)){
+	if(content.indexOf("!!") > -1 && content.indexOf("!!") > -1 && content.match(spoilerRegex)){
 		// Check permissions
 		let guild = msg.guild;
 		if(!guild) {return msg.reply(":x: Spoilers cannot be used in PMs. Invite me to a server (say `about` for more info)");}
