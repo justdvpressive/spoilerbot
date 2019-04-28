@@ -5,8 +5,7 @@ makes [Spoiler (hover/click)](https://spoilerbot.page.link/81nF "spoilers") for 
 **usage**  
 Put a spoiler in any message by putting `>! !<` around the spoiler
 
-**errors**  
-See the [website](https://pfgithub.github.io/spoilerbot)
+
 
 **links**  
 
