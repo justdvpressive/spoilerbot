@@ -5,11 +5,9 @@ makes >!spoilers!< for text you don't want >!other people to see!<
 
 ## links
 
-[discordbots.org](https://discordbots.org/bot/532791925711962114)  
-[Invite Me](https://discordapp.com/oauth2/authorize?client_id=532791925711962114&scope=bot&permissions=9216)  
+[discordbots.org](https://discordbots.org/bot/571468928191168513)
+[Invite Me](https://discordapp.com/api/oauth2/authorize?client_id=571468928191168513&permissions=9216&scope=bot)  
 [Support Server](https://discord.gg/j7qpZdE)  
-[Source Code](https://github.com/pfgithub/spoilerbot/)  
-[Website](https://pfgithub.github.com/spoilerbot/)
 
 ## usage
 Put a spoiler in any message by putting `>! !<` around the spoiler. You can have as many spoilers as you want in a message.
@@ -17,7 +15,7 @@ Put a spoiler in any message by putting `>! !<` around the spoiler. You can have
 ## errors
 
 **Spoilers cannot be used in PMs.**  
-Spoilerbot is intended for use in servers, not PMs. [Invite it](https://discordapp.com/oauth2/authorize?client_id=532791925711962114&scope=bot&permissions=9216) to a server.
+Spoilerbot is intended for use in servers, not PMs. [Invite it](https://discordapp.com/api/oauth2/authorize?client_id=571468928191168513&permissions=9216&scope=bot) to a server.
 
 ---
 
@@ -41,32 +39,6 @@ Converting messages into spoilers adds extra characters, meaning that even if yo
 
 ---
 
-Join the [support server](https://discord.gg/j7qpZdE) or submit a bug report on [github](https://github.com/pfgithub/spoilerbot/) if there are any problems you can't find a solution to.
+Join the [support server](https://discord.gg/QyakKPK) to submit a bug report if there are any problems you can't find a solution to.
 
-## running yourself
-
-```bash
-# download
-git clone https://github.com/pfgithub/spoilerbot.git
-cd spoilerbot
-```
----
-
-```bash
-# setup
-yarn install
-```
-Create `secret.json` with
-<pre>
-{
-  "token": "<a href="http://discordapp.com/applications/developers/me">Your Bot Token</a>",
-  "firebasekey": "AIzaSyCK6kq9FxWLYdnlMg9WpspX_9DK-WjObAo
-}
-</pre>
-
----
-
-```bash
-# run
-node index.js
-```
+ 
