@@ -88,25 +88,25 @@ client.on("message", async msg => {
 	if(content.indexOf(">!") > -1 && content.indexOf("!<") > -1 && content.match(spoilerRegex)){
 		// Check permissions
 		let guild = msg.guild;
-		if(!guild) {return msg.reply("<:failure:508841130503438356> Spoilers cannot be used in PMs. Invite me to a server (say `about` for more info)");}
+		if(!guild) {return msg.reply(":x: Spoilers cannot be used in PMs. Invite me to a server (say `about` for more info)");}
 
 		let me = guild.me;
 		let myperms = msg.channel.memberPermissions(me);
 
 		if(!myperms.has("SEND_MESSAGES")){
 			if(guild.id === "264445053596991498" || guild.id === "110373943822540800") {return;} // disables PMs in bot list servers, in case the bot gets triggered too much and needs mute 
-			let delme = await msg.author.send(`<:failure:508841130503438356> Spoilers are not available in #${msg.channel.name} because I do not have permission to send messages there.`);
+			let delme = await msg.author.send(`:x: Spoilers are not available in #${msg.channel.name} because I do not have permission to send messages there.`);
 			delme.delete(10*1000);
 			return;
 		}
 
 		if(!myperms.has("MANAGE_MESSAGES")){
 			if(guild.me.hasPermission("MANAGE_MESSAGES")){
-				let delme = await msg.reply(`<:failure:508841130503438356> Spoilers are not available in ${msg.channel} because I do not have permission to manage messages.`);
+				let delme = await msg.reply(`:x: Spoilers are not available in ${msg.channel} because I do not have permission to manage messages.`);
 				delme.delete(10*1000);
 				return;
 			}
-			let delme = await msg.reply("<:failure:508841130503438356> Spoilers are not available in this server because I do not have permission to manage messages.");
+			let delme = await msg.reply(":x: Spoilers are not available in this server because I do not have permission to manage messages.");
 			delme.delete(10*1000);
 			return;
 		}
@@ -149,7 +149,7 @@ client.on("message", async msg => {
 	}
 	if(!msg.guild){
 		if(content.indexOf("about") > -1){
-			return await msg.channel.send("About:", {embed: {"title":"Spoiler Bot","description":aboutMessage,"url":"https://pfgithub.github.io/spoilerbot/","color":14207324}});
+			return await msg.channel.send("About:", {embed: {"title":"Spoiler Bot","description":aboutMessage,"color":14207324}});
 		}
 		return await msg.channel.send("Say `about` for info about me."); // Reply required because it contains the user ID.
 	}
@@ -157,7 +157,7 @@ client.on("message", async msg => {
 
 function updateActivity() {
 	let count = client.guilds.size;
-	client.user.setActivity(`spoiling on >! ${count} !< servers`);
+	client.user.setActivity(`spoiling on ${count} servers`);
 }
 
 function getEmojiKey(emoji) {
