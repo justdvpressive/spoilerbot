@@ -125,7 +125,7 @@ client.on("message", async msg => {
 		content += "\n​";
 
 		if(content.length > 2000){
-			let delme = await msg.reply("<:failure:508841130503438356> That spoiler is too close to 2000 characters.");
+			let delme = await msg.reply(":x: That spoiler is too close to 2000 characters.");
 			delme.delete(10*1000);
 			return;
 		}
