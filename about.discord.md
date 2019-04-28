@@ -10,8 +10,6 @@ See the [website](https://pfgithub.github.io/spoilerbot)
 
 **links**  
 
-[discordbots.org](https://discordbots.org/bot/532791925711962114)  
-[Invite Me](https://discordapp.com/oauth2/authorize?client_id=532791925711962114&scope=bot&permissions=9216)  
-[Support Server](https://discord.gg/j7qpZdE)  
-[Source Code](https://github.com/pfgithub/spoilerbot/)  
-[Website](https://pfgithub.github.com/spoilerbot/)
+[discordbots.org](https://discordbots.org/bot/571468928191168513)  
+[Invite Me](https://discordapp.com/api/oauth2/authorize?client_id=571468928191168513&permissions=9216&scope=bot)  
+[Support Server](https://discord.gg/QyakKPK)
